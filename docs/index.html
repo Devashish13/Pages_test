@@ -4,54 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RAISING Documentation</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .accordion-button:focus {
-            outline: none;
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800">
 
-<!-- Collapsible Sections -->
-<div class="container mt-5">
-  <h2>FAQs</h2>
-  <div class="accordion" id="faqExample">
-    <div class="card">
-      <div class="card-header" id="faq1">
-        <h5 class="mb-0">
-          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            What is RAISING?
-          </button>
-        </h5>
-      </div>
-      <div id="collapseOne" class="collapse show" aria-labelledby="faq1" data-parent="#faqExample">
-        <div class="card-body">
-          RAISING is a framework for detecting genomic regions under polygenic adaptation.
-        </div>
-      </div>
+<!-- Navigation -->
+<nav class="bg-green-600 p-4">
+  <div class="container mx-auto flex justify-between">
+    <a href="#" class="text-white text-2xl font-bold">RAISING Project</a>
+    <div>
+      <a href="README_hp_optimization.html" class="text-white ml-6">Hyperparameter Optimization</a>
+      <a href="RAISING_Demo.html" class="text-white ml-6">RAISING Demo</a>
     </div>
-    <div class="card">
-      <div class="card-header" id="faq2">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            How does RAISING work?
-          </button>
-        </h5>
-      </div>
-      <div id="collapseTwo" class="collapse" aria-labelledby="faq2" data-parent="#faqExample">
-        <div class="card-body">
-          RAISING applies deep learning algorithms to identify signals of polygenic adaptation using genomic data.
-        </div>
-      </div>
-    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="bg-blue-500 text-white py-16">
+  <div class="container mx-auto text-center">
+    <h1 class="text-5xl font-bold">Welcome to RAISING</h1>
+    <p class="text-xl mt-4">Your gateway to polygenic adaptation research</p>
   </div>
 </div>
 
-<!-- Bootstrap JS and dependencies (optional) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- About Section -->
+<div class="container mx-auto my-12 p-6 bg-white shadow-md rounded-lg">
+  <h2 class="text-3xl font-semibold mb-4">About RAISING</h2>
+  <p class="text-lg">RAISING is a framework designed to detect genomic regions under polygenic adaptation. Explore the documentation and tutorials for deeper insights.</p>
+</div>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white p-4 text-center">
+  <p>&copy; 2024 RAISING Project - All Rights Reserved</p>
+</footer>
 
 </body>
 </html>

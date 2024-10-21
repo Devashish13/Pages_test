@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RAISING</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Function to toggle visibility of the Tutorials section
+      function toggleTutorials() {
+        var tutorialsSection = document.getElementById('tutorials');
+        if (tutorialsSection.style.display === 'none' || tutorialsSection.style.display === '') {
+          tutorialsSection.style.display = 'block'; // Show the section
+        } else {
+          tutorialsSection.style.display = 'none'; // Hide the section
+        }
+      }
+    </script>
 </head>
 <body class="bg-gray-100 text-gray-800">
 
@@ -39,12 +50,12 @@
   <div class="space-x-4">
     <a href="installation.html" class="bg-green-500 text-white py-2 px-6 rounded-full hover:bg-green-600">Installation</a>
     <a href="README_hp_optimization.html" class="bg-blue-500 text-white py-2 px-6 rounded-full hover:bg-blue-600">Documentation</a>
-    <a href="#tutorials" class="bg-yellow-500 text-white py-2 px-6 rounded-full hover:bg-yellow-600">Tutorials</a>
+    <a href="javascript:void(0);" onclick="toggleTutorials()" class="bg-yellow-500 text-white py-2 px-6 rounded-full hover:bg-yellow-600">Tutorials</a>
   </div>
 </div>
 
-<!-- Tutorials Section -->
-<div id="tutorials" class="container mx-auto my-12 p-6 bg-white shadow-md rounded-lg">
+<!-- Tutorials Section (Initially Hidden) -->
+<div id="tutorials" class="container mx-auto my-12 p-6 bg-white shadow-md rounded-lg" style="display: none;">
   <h2 class="text-3xl font-semibold mb-4">Tutorials</h2>
   <ul class="list-disc pl-5 text-lg">
     <li>
